@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { MapContainer, Marker, TileLayer, Popup } from 'react-leaflet';
 import axios from 'axios';
 
+import { getMarkerIcon } from '../iconPersonal/createIcon';
+
 export function MapLocation() {
   const [user, setUser] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -30,7 +32,7 @@ export function MapLocation() {
             user.map((item, index) => { 
               return (
             <>
-              <Marker position={[item.lat, item.long]}>
+              <Marker position={[item.lat, item.long]} icon={getMarkerIcon()}>
                 <Popup>
                   {username[index]}
                 </Popup>
