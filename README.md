@@ -21,7 +21,8 @@
 </ul>
 
 <h1>Instruções para rodar o projeto</h1>
-<ol> Clone o repositório.
+<ol>
+    <li>Clone o repositório.</li>
 	<ul><li>Entre na pasta do repositório que você acabou de clonar</li></ul>
 	<li>Instale as dependências</li>
     <ul><li>Rode o comando: npm install</li</ul>
